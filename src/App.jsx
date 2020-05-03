@@ -36,7 +36,7 @@ class App extends React.Component {
   /*Write an addStudent method here*/
   addStudent(studentName) {
     this.setState({
-      student: this.state.students.concat(studentName)
+      students: this.state.students.concat(studentName)
     })
   }
 
@@ -80,7 +80,7 @@ class App extends React.Component {
     }
 
     /* Uncomment lines below to render grades*/
-    /*if (this.state.buttonClicked === "grades") {
+    if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
           tableNames={this.state.assignments}
@@ -89,7 +89,7 @@ class App extends React.Component {
           data={this.state.grades}
         />
       );
-    }*/
+    }
 
     return (
       <div>
